@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.0)
-set(PROJECTNAME clinkedlist)
+set(PROJECTNAME linkedlist)
 
 project(${PROJECTNAME})
 
@@ -18,4 +18,4 @@ add_library(${PROJECTNAME} STATIC ${SOURCES})
 
 # install whatever you built
 install(TARGETS ${PROJECTNAME} DESTINATION /usr/local/lib)
-
+install(FILES linkedlist.h destination /usr/local/include)
